@@ -1,0 +1,64 @@
+---
+title: "Case Study 1"
+author: "Jeff Chandler"
+date: "November 2, 2016"
+output: html_document
+---
+#__INTRODUCTION__
+
+###This project takes a look at Gross Domestic Product data for countries world-wide that report to the World Bank. We download the data from the World Bank so we can analyze and chart each Countries GDP by region, while also showing what income group a country is part of. This is shown by the color of the dot that represents each country. 
+
+
+##This section of code will perform the following items:
+* Check for the correct R packages and load them if necessary
+* Download the Raw data from the World Bank
+* Clean, Format, and Merge the data into one data file
+* Break down the merged file into 5 quantile groups. Shown in the Quantile column
+
+```{r}
+##example make file for illustration purposes
+Workdir = "C://RProjects//CaseStudy1//Analysis"
+##set working directory
+setwd(Workdir)
+
+##Call script to load libraries
+source('CheckInstallPack.R')
+
+##set working directory
+setwd(Workdir)
+
+##Load and clean initial data files
+source('DownLoadData.R')
+
+##set working directory
+setwd(Workdir)
+
+##Merge and format the data
+source('MergeFormat.R')
+```
+
+##This next section of code will perform the following:
+* Print out the name of the 13th country in the ordered list
+* Print out the average ranking for High Income OECD Income Group
+* Print out the average ranking for the High Income nonOECD Income Group
+* Print out the number of Countries that are in the Lower Middle Income Group but are amoung the 38 highest GDP
+* Plot the GDP for each country by Region while also showing what income group they belong.
+
+```{r}
+##set working directory
+setwd(Workdir)
+
+##Call the r script
+source('GDPAnalysis.R')
+```
+
+##Questions Ansnwered from the Above Code:
+1. Number of matching Country Codes is 224.
+2. St. Kitts and Nevis was the 13th Country in the ordered list.
+3. Average High Income: 32.96667. Average High Income nonOECD: 91.91304.
+4. Plot is above.
+5. There are 5 countries.
+
+#__Conclusion__
+###Based on the above plot it is clear that the European & Central Asia region appears to have the largest number of upper to high income countries. While South Asia and Sub-Saharan Africa regions appear to have the lowest GDP and Income groups.
+
