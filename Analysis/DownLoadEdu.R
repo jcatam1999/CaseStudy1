@@ -1,5 +1,5 @@
 ##download education file and clean up a bit so will be useful
-DataFilePath = 'C://CaseStudy//Analysis//Data'
+DataFilePath = 'C://RProjects//CaseStudy1//Analysis//Data'
 EDUDataFile = 'EducationData.csv'
 EDUURL1 = "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FEDSTATS_Country.csv"
 CleanEDUFile = 'NewEdu.csv'

@@ -1,7 +1,7 @@
 ##Download the source data file from internet
 ##if it does not already exist
 
-DataFilePath = 'C://RCode//CaseStudy1//Analysis//Data'
+DataFilePath = 'C://RProjects//CaseStudy1//Analysis//Data'
 EDUDataFile = 'EducationData.csv'
 GDPDataFile = 'GDP.csv'
 CleanGDPFile = 'NewGDP.csv'

@@ -3,12 +3,12 @@
 ##create final merged data file for analysis
 
 ##Variable
-GDPFile = 'C://RCode//CaseStudy1//Analysis//Data//NewGDP.csv'
+GDPFile = 'C://RProjects//CaseStudy1//Analysis//Data//NewGDP.csv'
 EduFile = 'EducationData.csv'
 GdpEduFile = 'GDPEDUFinal.csv'
 
 ##Set working direcotry
-setwd('C:\\RCode\\CaseStudy1\\Analysis\\Data')
+setwd('C:\\RProjects\\CaseStudy1\\Analysis\\Data')
 
 ##load the data
 gdp = read.csv(GDPFile, sep = ',')

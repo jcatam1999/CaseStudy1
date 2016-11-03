@@ -1,25 +1,25 @@
 ##example make file for illustration purposes
-
+Workdir = "C://RProjects//CaseStudy1//Analysis"
 ##set working directory
-setwd("C://RCode//CaseStudy1//Analysis")
+setwd(Workdir)
 
 ##Call script to load libraries
 source('CheckInstallPack.R')
 
 ##set working directory
-setwd("C://RCode//CaseStudy1//Analysis")
+setwd(Workdir)
 
 ##Load and clean initial data files
 source('DownLoadData.R')
 
 ##set working directory
-setwd("C://RCode//CaseStudy1//Analysis")
+setwd(Workdir)
 
 ##Merge and format the data
 source('MergeFormat.R')
 
 ##set working directory
-setwd("C://RCode//CaseStudy1//Analysis")
+setwd(Workdir)
 
 ##Call the r script
 source('GDPAnalysis.R')
