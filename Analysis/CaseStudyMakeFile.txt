@@ -1,0 +1,25 @@
+##example make file for illustration purposes
+
+##set working directory
+setwd("C://RCode//CaseStudy1//Analysis")
+
+##Call script to load libraries
+source('CheckInstallPack.R')
+
+##set working directory
+setwd("C://RCode//CaseStudy1//Analysis")
+
+##Load and clean initial data files
+source('DownLoadData.R')
+
+##set working directory
+setwd("C://RCode//CaseStudy1//Analysis")
+
+##Merge and format the data
+source('MergeFormat.R')
+
+##set working directory
+setwd("C://RCode//CaseStudy1//Analysis")
+
+##Call the r script
+source('GDPAnalysis.R')
